@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    color: #f9faf8;
+    padding: 0 7em 0 7em;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #e5e7eb;
+    padding: 1em 0 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0;
+    gap: 3em;
+}
+/*Text adjustments in the header's description (intro)*/
+.intro-txt {
+    font-size: 18px;
+}
+
+.intro-txt h1 {
+    font-size: 49px;
+}
+
+.intro-txt p {
+    color: #e5e7eb;
+}
+/*This changes how the "image" box is displayed to prevent it from shrinking and
+keeps the text always vertically and horizontally centered (with flex)*/
+.intro-img {
+    width: 1000px;
+    background: #a5a5a5;
+    flex-shrink: 0;
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+/*Both 'Sign up' buttons share the same design*/
+button {
+    background: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid #f9faf8;
+    border-radius: 10px;
+}
+/*But the 'Sign up' button in header doesn't have borders*/
+.intro button {
+    border: none;
+}
+.main {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 2em;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding: 2em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    font-size: 18px;
+    font-weight: normal;
+    color: #35455c;
+}
+
+.card, .square {
+    width: 150px;
+}
+
+.square {
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.more {
+    padding: 100px 200px;
+    background: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    text-align: left;
+}
+
+.more h4 {
+    padding-right: 5px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    padding-right: 40px;
+}
+
+.ad {
+    background: #3882f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f9faf8;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #f9faf8;
+}
+
+/*Adjustments (background colors, margin corrections, etc)*/
+.header, .footer {
+    background: #1f2937;
+}
+
+h2, h1, h3, h4 {
+    margin: 0;
+}
+
+.nav h2 {
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
